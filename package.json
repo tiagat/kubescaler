@@ -1,0 +1,27 @@
+{
+  "name": "kubescaler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.12.2"
+  },
+  "scripts": {
+    "build": "tsc --project ./tsconfig.build.json && tsc-alias",
+    "start": "ts-node -r tsconfig-paths/register ./src/index.ts"
+  },
+  "author": "Ruslan Sakal",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^0.21.0",
+    "commander": "^12.1.0",
+    "csvtojson": "^2.0.10"
+  }
+}
